@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You • Maulik Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme">
+  <div class="stars"></div>
+  <section class="section hero">
+    <div class="content">
+      <h1 class="title">🎉 Thank You!</h1>
+      <p class="lead">I really appreciate you visiting my portfolio.  
+      Your time means a lot to me 🙏</p>
+      <div class="cta-row">
+        <a href="portfolio.html" class="btn primary">Back to Portfolio</a>
+        <a href="login.html" class="btn">Logout</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Keep in Touch</h2>
+    <div class="grid contact-grid">
+      <div class="glass card">
+        <h3>Email</h3>
+        <p><a href="mailto:polaramaulik15@gmail.com" class="link">polaramaulik15@gmail.com</a></p>
+      </div>
+      <div class="glass card">
+        <h3>Instagram</h3>
+        <p><a class="link" href="https://www.instagram.com/mr_polara_2207_" target="_blank">mr_polara_2207_</a></p>
+      </div>
+      <div class="glass card">
+        <h3>LinkedIn</h3>
+        <p><a class="link" href="https://www.linkedin.com/in/maulik-polara-0442062a6" target="_blank">Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+<script>
+  function launchConfetti(){
+    const duration = 3000; // 3s
+    const end = Date.now() + duration;
+
+    (function frame(){
+      const colors = ['#bb0000','#ffffff','#00bb00','#0000bb','#ffbb00','#bb00ff'];
+      for(let i=0;i<10;i++){
+        const conf = document.createElement('div');
+        conf.style.position='fixed';
+        conf.style.width='10px';
+        conf.style.height='10px';
+        conf.style.background=colors[Math.floor(Math.random()*colors.length)];
+        conf.style.top=Math.random()*100+'vh';
+        conf.style.left=Math.random()*100+'vw';
+        conf.style.opacity=0.8;
+        conf.style.transform='rotate('+Math.random()*360+'deg)';
+        conf.style.borderRadius='50%';
+        document.body.appendChild(conf);
+
+        setTimeout(()=>conf.remove(), 3000);
+      }
+      if(Date.now()<end) requestAnimationFrame(frame);
+    })();
+  }
+
+  window.onload = launchConfetti;
+</script>
+
+
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Maulik Polara</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

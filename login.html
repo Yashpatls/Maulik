@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Maulik Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme">
+  <div class="stars"></div>
+  <main class="centered login-wrapper">
+    <section class="glass card login-card">
+      <div class="sun"></div>
+      <h1 class="title">Welcome</h1>
+      <p class="muted">Login to open Maulik's portfolio</p>
+      <form id="loginForm" class="form">
+        <label>Login ID
+          <input type="text" id="loginId" placeholder="Enter ID" required />
+        </label>
+        <!-- <label>Password
+          <input type="password" id="password" placeholder="Enter password" required />
+        </label> -->
+        <label>Password
+  <div style="position:relative">
+    <input type="password" id="password" placeholder="Enter password" required />
+    <span id="togglePw" style="position:absolute; right:12px; top:12px; cursor:pointer; user-select:none;">👁</span>
+  </div>
+</label>
+
+        <button class="btn primary" type="submit">Enter</button>
+        <p class="hint">
+          Demo: <code>maulik</code> / <code>1234</code>
+        </p>
+      </form>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

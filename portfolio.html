@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maulik Polara • Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme">
+  <div class="stars"></div>
+  <header class="glass nav">
+    <a href="#home" class="brand">Maulik<span>Polara</span></a>
+    <nav id="navMenu">
+      <a href="#home" >Home</a>
+      <a href="#about">About</a>
+      <a href="#skills" >Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html" id="logoutBtn">Logout</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="btn">🌙</button>
+      <button id="hamburger" aria-label="Menu" class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section id="home" class="section hero">
+  <div class="sun big"></div>
+  <div class="content">
+    <h1 class="title">Hi, I'm <span class="accent">Maulik Polara</span></h1>
+    
+    <p class="lead">
+      I’m a student specializing in <strong>Graphics Design</strong> and <strong>UI Design</strong>.
+      Diploma completed • pursuing <strong>B-Tech at JG University</strong>.
+      Passionate about visually appealing designs and user-friendly interfaces.
+    </p>
+    <p>📍 Ahmedabad, India</p>
+    <div class="cta-row">
+      <a href="#projects" class="btn primary">See Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- Profile Pic -->
+  <div class="profile-pic">
+    <img src="profile.jpg" alt="Maulik Polara">
+  </div>
+</section>
+
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="grid about-grid">
+      <div class="glass card">
+        <h3>Intro</h3>
+        <p>My name is <strong>Maulik Polara</strong>. I am a student specializing in graphics design and UI design. I have completed my diploma and am now pursuing B‑Tech at <strong>JG University</strong>. I am passionate about creating visually appealing designs and user‑friendly interfaces.</p>
+      </div>
+      <div class="glass card">
+        <h3>What I love</h3>
+        <p>Designing clean interfaces, crafting brand systems, and turning ideas into delightful experiences. I focus on accessibility, motion, and micro‑interactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid skills-grid">
+      <div class="skill card glass tilt">
+        <h3>Graphics Design</h3>
+        <p>Branding, posters, social media, visual systems.</p>
+      </div>
+      <div class="skill card glass tilt">
+        <h3>UI/UX Design</h3>
+        <p>Wireframes, prototypes, design systems, usability.</p>
+      </div>
+      <div class="skill card glass tilt">
+        <h3>Development</h3>
+        <p>HTML, CSS, JavaScript; responsive UI; micro‑animations.</p>
+      </div>
+      <div class="skill card glass tilt">
+        <h3>Management</h3>
+        <p>Project planning, teamwork, client communication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid project-grid">
+      <div class="project card glass tilt">
+        <h3>UI Kit Concept</h3>
+        <p>Typography, color tokens, components. Figma based.</p>
+      </div>
+      <div class="project card glass tilt">
+        <h3>Brand Identity</h3>
+        <p>Logo, palette, and guidelines for a startup.</p>
+      </div>
+      <div class="project card glass tilt">
+        <h3>Landing Page</h3>
+        <p>Responsive landing with smooth scroll & animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+  <div class="grid contact-grid">
+    <div class="glass card">
+      <h3>Call / WhatsApp</h3>
+      <p><a href="tel:+91-9327404083" class="link">+91 9327404083</a></p>
+    </div>
+    <div class="glass card">
+      <h3>Gmail</h3>
+      <p><a href="mailto:polaramaulik15@gmail.com" class="link">polaramaulik15@gmail.com</a></p>
+    </div>
+    <div class="glass card">
+      <h3>Social</h3>
+      <p>
+        <a class="link" href="https://www.instagram.com/mr_polara_2207_?igsh=YzdjaGx6Y3JoODNl" target="_blank">Instagram</a> •
+        <a class="link" href="https://www.linkedin.com/in/maulik-polara-0442062a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>© <span id="year"></span> Maulik Polara — Designed with ♥</p>
+  <p><a href="thankyou.html" class="link">Go to Thank You Page</a></p>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form • Maulik Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme">
+  <div class="stars"></div>
+  <main class="centered login-wrapper">
+    <section class="glass card login-card">
+      <div class="sun"></div>
+      <h1 class="title">Fill the Form</h1>
+      <p class="muted">Please enter your details</p>
+      <form id="formPage" class="form">
+        <label>Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label>Email
+          <input type="email" id="email" placeholder="Enter email" required />
+        </label>
+        <button class="btn primary" type="submit">Continue</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    document.getElementById('formPage').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      sessionStorage.setItem('formFilled','true');
+      sessionStorage.setItem('userName', name);
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
